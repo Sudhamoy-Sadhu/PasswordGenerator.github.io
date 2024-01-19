@@ -1,63 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI',sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
-.main{
-    padding: 16vw;
+
+.main {
+    padding: 10vw; 
     background: #2D3250;
     height: 100vh;
 }
-h2{
+
+h2 {
     color: aliceblue;
     font-size: 2.3rem;
 }
-.green{
+
+.green {
     color: #65B741;
     line-height: 3.2rem;
 }
-.name{
+
+.name {
     border-bottom: 3px solid #65B741;
     width: fit-content;
 }
-.result{
+
+.result {
     margin: 20px 0px;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 90%;
+    max-width: 400px;
     background: #fff;
     border-radius: 5px;
 }
-input{
-    width: 90%;
+
+input {
+    width: 100%; 
     height: 5vh;
     margin-left: 2px;
     border: none;
     padding: 0px 0.5rem;
 }
-.s{
+
+.s {
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.btn{
+.btn {
     background: green;
-    width: fit-content;
+    width: 100%; 
     height: 5vh;
     display: flex;
-    
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: white;
     padding: 0px 10px;
     border-radius: 5px;
 }
-.btn:hover{
-    background: rgb(4, 171, 4) ;
+
+.btn:hover {
+    background: rgb(4, 171, 4);
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 5vw;
+    }
+
+    .result {
+        width: 100%; 
+    }
 }
